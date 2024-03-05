@@ -7,11 +7,18 @@ const RequestInput = ({ setRequest }) => {
 
     const [inputValue, setInputValue] = useState("")
 
+    function handleKeyDown (event) {
+        if (event.key === 'Enter') {
+            setRequest(inputValue);
+        }
+      };
+
     return (
         <>
             <input 
                 type="text" 
                 value={inputValue}
+                onKeyDown={(e) => handleKeyDown(e)} 
                 onChange={(e) => setInputValue(e.target.value)}
             />
             <button
