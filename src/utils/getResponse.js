@@ -1,6 +1,6 @@
 const ROOT = 'http://localhost:3001/api/';
 
-export const getResponse = async (request) => {
+export default async function getResponse (request) {
 
     const url = ROOT + request;
 
@@ -16,7 +16,7 @@ export const getResponse = async (request) => {
         }
 
         return await res.json();
-        
+
     } catch (error) {
         console.log('Could not fetch.', error.message);
         return false;

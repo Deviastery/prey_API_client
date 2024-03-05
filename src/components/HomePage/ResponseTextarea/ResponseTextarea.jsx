@@ -1,4 +1,5 @@
-import { getResponse } from '../../../utils/getResponse';
+import getResponse from '../../../utils/getResponse';
+import deleteTechnicalProperties from '../../../utils/deleteTechnicalProperties';
 
 import PropTypes from 'prop-types';
 import styles from './ResponseTextarea.module.css';
@@ -27,10 +28,10 @@ const ResponseTextarea = ({ request }) => {
     return (
         <>
             <textarea name="response" id="" cols="70" rows="30"
-                value={Array.isArray(text) ? text.map((item) => {
-                    delete item._id;
-                    return JSON.stringify(item, null, 4)
-                }).join(',\n') : ''}
+                value={text && text.map((item) => {
+                    deleteTechnicalProperties(item);
+                    return JSON.stringify(item, null, 4);
+                }).join(',\n')}
                 readOnly
             >
             </textarea>
