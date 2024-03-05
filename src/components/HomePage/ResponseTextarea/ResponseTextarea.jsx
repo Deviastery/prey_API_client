@@ -10,13 +10,20 @@ const ResponseTextarea = ({ request }) => {
     useEffect(() => {
         
         if (request) {
+
             (async () => {
-                setText(await getResponse(request));
+                const res = await getResponse(request);
+                if (!(Array.isArray(res))) {
+                    let futureText = [];
+                    futureText.push(res);
+                    setText(futureText);
+                    return;
+                }
+                setText(res);
             })()
         }
         }, [request]);
 
-    console.log(text);
     return (
         <>
             <textarea name="response" id="" cols="70" rows="30"
