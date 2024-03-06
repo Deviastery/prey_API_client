@@ -9,25 +9,21 @@ const ResponseTextarea = ({ request }) => {
     const [text, setText] = useState('')
     
     useEffect(() => {
-        
-        if (request) {
 
-            (async () => {
-                const prevRes = await getResponse(request);
-                console.log(prevRes);
-                if (prevRes) {
-                    if (!(Array.isArray(prevRes))) {
-                        let res = [];
-                        res.push(prevRes);
-                        setText(res);
-                        return;
-                    }
-                    setText(prevRes);
+        (async () => {
+            const prevRes = await getResponse(request);
+            if (prevRes) {
+                if (!(Array.isArray(prevRes))) {
+                    let res = [];
+                    res.push(prevRes);
+                    setText(res);
                     return;
                 }
-                setText('Not Found');
-            })()
-        }
+                setText(prevRes);
+                return;
+            }
+            setText('Not Found');
+        })()
     }, [request]);
 
     function formatText(text) {
@@ -38,8 +34,6 @@ const ResponseTextarea = ({ request }) => {
             return JSON.stringify(item, null, 4);
         }).join(',\n'))
     }
-
-    console.log(text);
 
     return (
         <>
