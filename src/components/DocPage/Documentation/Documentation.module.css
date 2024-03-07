@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    color: rgba(255, 255, 255, 0.85);
+    width: 70%;
+    background-color: rgba(28, 23, 14, 0.3);
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 5px 15px;
+}
+.container div{
+    background-color: transparent;
+}
+h2 {
+    background-color: transparent;
+    padding: 15px 0 20px 0;
+    font-size: 30px;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 600;
+}
+h3 {
+    background-color: transparent;
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 500;
+}
+p {
+    background-color: transparent;
+    padding-bottom: 5px;
+}
+b {
+    background-color: transparent;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 500;
+}
+code {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #000;
+    display: block;
+    width: 70%;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 5px 0;
+}
+li code {
+    color: #000;
+    display: inline;
+    width: 70%;
+    border-radius: 2px;
+    padding: 1px 3px;
+}
+pre {
+    background-color: transparent;
+}
+.container ul{
+    background-color: transparent;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.container ul li{
+    background-color: transparent;
+}
+.response_code{
+    background-color: #fff;
+    display: block;
+    width: 1100px;
+
+}
+i{
+    background-color: transparent;
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 85%;
+        float: right;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+    }
+}
+
