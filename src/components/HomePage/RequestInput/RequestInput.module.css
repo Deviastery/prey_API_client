@@ -1,0 +1,37 @@
+.input_elem{
+    background-color: rgba(126, 110, 146, 0.6);
+    width: 600px;
+    margin: auto;
+    border-radius: 5px 5px 0 0;
+}
+.url_input{
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 25px;
+    border: 1px solid #000000;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 0 0 2px;
+}
+.root{ 
+    display: inline;
+    background-color: transparent;
+    padding: 0 3px 0 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+.request_button{
+    display: inline;
+    width: 123px;
+    border-radius: 0 5px 0 0;
+    padding: 0 5px 4px 25px;
+    font-size: 17px;
+    height: 25px;
+}
+.request_button:hover{
+    background-color: rgba(4, 4, 37, 0.3);
+    transition: .2s;
+}

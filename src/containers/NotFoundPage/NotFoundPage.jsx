@@ -5,10 +5,10 @@ import styles from './NotFoundPage.module.css';
 
 const NotFoundPage = () => {
     return (
-        <>
-            <p>Not Found</p>
-            <img src={NotFoundImg} alt="psychoscope" />
-        </>
+        <div>
+            <p className={styles.title}>Not Found</p>
+            <img src={NotFoundImg} alt="psychoscope" className={styles.image_not_found}/>
+        </div>
     )
 }
 

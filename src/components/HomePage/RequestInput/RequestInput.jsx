@@ -14,19 +14,24 @@ const RequestInput = ({ setRequest }) => {
       };
 
     return (
-        <>
+        <div className={styles.input_elem}>
+            <div className={styles.root}>
+            http://localhost:3001/api/
+            </div>
             <input 
+                className={styles.url_input}
                 type="text" 
                 value={inputValue}
                 onKeyDown={(e) => handleKeyDown(e)} 
                 onChange={(e) => setInputValue(e.target.value)}
             />
             <button
+                className={styles.request_button}
                 onClick={() => setRequest(inputValue)}
             >
-                Request
+                request
             </button>
-        </>
+        </div>
     )
 }
 

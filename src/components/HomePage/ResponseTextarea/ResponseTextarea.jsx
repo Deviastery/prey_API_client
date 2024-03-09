@@ -36,15 +36,16 @@ const ResponseTextarea = ({ request }) => {
     }
 
     return (
-        <>
-            <textarea name="response" id="" cols="70" rows="30"
-                value={
-                    formatText(text)
-                }
-                readOnly
-            >
-            </textarea>
-        </>
+        <div className={styles.wrapper}>
+        <textarea name="response" id="" cols="70" rows="30"
+            className={styles.response_textarea}
+            value={
+                formatText(text)
+            }
+            readOnly
+        >
+        </textarea>
+        </div>
     )
 }
 
