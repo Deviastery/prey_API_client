@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/prey_api_client/static/css/main.005a013d.css",
-    "main.js": "/prey_api_client/static/js/main.276c4134.js",
-    "static/media/not_found.jpg": "/prey_api_client/static/media/not_found.118336bb541e6842a7e5.jpg",
-    "static/media/header.jpeg": "/prey_api_client/static/media/header.1a11b273d73d57248345.jpeg",
-    "static/media/Hero.ttf": "/prey_api_client/static/media/Hero.5da03185f926f6717e20.ttf",
-    "index.html": "/prey_api_client/index.html",
-    "main.005a013d.css.map": "/prey_api_client/static/css/main.005a013d.css.map",
-    "main.276c4134.js.map": "/prey_api_client/static/js/main.276c4134.js.map"
+    "main.css": "/prey_API_client/static/css/main.39ff2936.css",
+    "main.js": "/prey_API_client/static/js/main.21a6d225.js",
+    "static/media/not_found.jpg": "/prey_API_client/static/media/not_found.118336bb541e6842a7e5.jpg",
+    "static/media/header.jpeg": "/prey_API_client/static/media/header.1a11b273d73d57248345.jpeg",
+    "static/media/Hero.ttf": "/prey_API_client/static/media/Hero.5da03185f926f6717e20.ttf",
+    "index.html": "/prey_API_client/index.html",
+    "main.39ff2936.css.map": "/prey_API_client/static/css/main.39ff2936.css.map",
+    "main.21a6d225.js.map": "/prey_API_client/static/js/main.21a6d225.js.map"
   },
   "entrypoints": [
-    "static/css/main.005a013d.css",
-    "static/js/main.276c4134.js"
+    "static/css/main.39ff2936.css",
+    "static/js/main.21a6d225.js"
   ]
 }
