@@ -22,6 +22,10 @@ const RequestInput = ({ setRequest }) => {
                 className={styles.url_input}
                 type="text" 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+                placeholder='hostiles'
+>>>>>>> Stashed changes
 =======
                 placeholder='hostiles'
 >>>>>>> Stashed changes
