@@ -21,14 +21,7 @@ const RequestInput = ({ setRequest }) => {
             <input 
                 className={styles.url_input}
                 type="text" 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
                 placeholder='hostiles'
->>>>>>> Stashed changes
-=======
-                placeholder='hostiles'
->>>>>>> Stashed changes
                 value={inputValue}
                 onKeyDown={(e) => handleKeyDown(e)} 
                 onChange={(e) => setInputValue(e.target.value)}
