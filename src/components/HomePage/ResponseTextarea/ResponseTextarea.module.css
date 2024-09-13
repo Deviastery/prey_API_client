@@ -1,13 +1,19 @@
-.wrapper{
-    height: 50vh;
+.wrapper {
+  height: 50vh;
 }
-.response_textarea{
-    display: block;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 600px;
-    padding: 5px;
-    border-radius: 0 0 5px 5px;
-    box-sizing: border-box;
-    height: 100%;
+.response_textarea {
+  display: block;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 600px;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .response_textarea {
+    width: 100%;
+  }
 }
